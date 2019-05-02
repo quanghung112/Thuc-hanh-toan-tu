@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+Login: <br>
+<input type="text" id="Input">
+<button onclick="Dangnhap()">Login</button>
+<script>
+    function Dangnhap() {
+        let login = document.getElementById('Input').value;
+        let message = (login == 'Employee') ?
+            'Hello' :
+            (login == 'Director') ?
+                'Greetings' :
+                (login == '') ?
+                    'No login' :
+                    '';
+        alert(message);
+    }
+</script>
+</body>
+</html>
